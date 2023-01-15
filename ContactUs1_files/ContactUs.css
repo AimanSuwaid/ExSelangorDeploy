@@ -1,0 +1,227 @@
+body{
+    font-family: "GT Easti", Arial, sans-serif;
+}
+
+.wrapper{
+  width:1100px;
+  height: auto;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+/*...................Navigation style Start...................................*/
+ul {
+    
+  list-style-type: none;
+  margin-left:5% ;
+  margin-right:5% ;
+  padding-left: 0px;
+  padding-right: 0px;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: right;
+}
+
+li a {
+    display: block;
+    color: #4F4E4E;
+    text-align: center;
+    padding: 22px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: "GT Easti", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    border-bottom: 3px solid transparent;
+   
+ 
+}
+
+li.normal a:hover {
+    border-bottom: 3px solid #393939;
+}
+
+li a.active {
+  border-bottom: 3px solid #393939;
+}
+
+li.logo{
+
+    padding-top: 10px;
+    background-image: url("Image/LOGO\ Web.png");
+    background-size: 230px;
+    background-repeat: no-repeat;
+    width: 284px;
+    position: relative;
+    display: inline-block;
+    height:60px;
+    position: center;
+    float: left;
+ 
+    top: -1px;
+}
+/*...................Navigation style End...................................*/
+
+/*...................Header Image Style Start...............................*/
+
+div.header-container{
+    padding-left: 0px;
+    padding-right: 0px;
+    overflow: hidden;
+    /*background-image: url("Image/contact-us-1.jpg");*/
+    background-attachment: fixed;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 520px;
+    left: 0px;
+    top: auto;
+    background-repeat: no-repeat;
+    border-bottom: 10px solid #002873;
+    display: block;
+}
+
+.description{
+    position: absolute;
+    bottom: 200px;
+    left: 16px;
+    font-size: 18px;
+    font-family: "GT Easti", Arial, sans-serif;
+    font-style: normal;
+}
+
+h1{
+    font-size: 96px;
+    color:white;
+    margin: 0%;
+    font-weight: bold;
+
+    
+}
+
+.description p{
+    font-size: 30px;
+    color:white;
+    margin-left: 5%;
+    font-weight: bold;
+    position: absolute;
+    bottom: 150px;
+    left: 0px;
+    
+}
+
+/*...................Header Image Style End...............................*/
+
+/*...................Footer Image Style End...............................*/
+
+  footer {
+    background-color: #002873;
+    padding: 10px;
+    height: auto;
+    text-align: center;
+    position:relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    color: white;
+    
+  }
+  /*...................Footer Image Style End...............................*/
+  
+/*...................Description Style start..............................*/
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 33.33%;
+
+  }
+
+  .column3 {
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+
+  }
+
+  .column3 a {
+    display: block;
+    color: #4F4E4E;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: "GT Easti", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    border-bottom: 3px solid transparent;
+   
+  
+  }
+
+  .card3:hover {
+    background-color: #92D3F5;
+    border: 2px solid #92D3F5;
+    }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {
+      margin: 0 -5px;
+      padding: 0 30px;
+      
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    
+    padding: 16px;
+    margin-left: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: left;
+    background-color: #f1f1f1;
+  }
+
+  .card3 {
+    
+    padding: 16px;
+    margin-left: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: left;
+    background-color: #f1f1f1;
+  }
+  footer {
+    background-color: #002873;
+    padding: 10px;
+    height: auto;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    color: white;
+    
+  }

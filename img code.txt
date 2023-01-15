@@ -1,0 +1,86 @@
+The transmitted data is received by the receiving device through its antennas, which capture the electromagnetic waves that comprise the transmitted signal and convert them into electrical signals that the device can process. The receiving device uses demodulation to extract the original data from the received signal after receiving the transmitted data. Demodulation entails analysing the received signal's characteristics and using this information to recover the original data that was transmitted. After the original data has been recovered, it is usually encoded in a format known as a "frame." 
+The frame is used to structure the data so that it can be transmitted and interpreted when it is received. The data is decoded by the receiving device by processing the frame to extract the original data that was transmitted. To ensure that the received data is accurate and complete, the receiving device may also perform error checking. If errors are detected, the receiving device may request that the transmitted data be retransmitted to ensure that the correct data is received. However, there are a few security concerns that the receiver should be aware of.The first is malware infection, in which the hacker inserts malware on the wireless access point or other network devices, allowing them to gain control of the devices and disable them or delete important files, causing the receiver to receive incomplete or corrupted files. The hacker could then use a device (such as a jammer) to disrupt wireless signals, making it difficult or impossible for the receiver to connect to the access point.
+
+
+<img src="photos/masjid.png" alt="masjid" width="100%" height="25%" >
+    <video width="100%" height="15%" autoplay muted>
+        <source src="video/masjid.mp4 "type = "video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+
+"<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15933.485685748106!2d"+position.coords.longitude+"101.7410057!3d"+position.coords.latitude+"3.2575792999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc38c37978b7a7%3A0xa3c69e64fdaa9f20!2sMahallah%20Sumayyah!5e0!3m2!1sen!2smy!4v1673362965273!5m2!1sen!2smy' width='800' height='600' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>";
+
+
+ document.getElementById("mapholder").innerHTML = "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15933.485685748106!2d"+position.coords.longitude+"!3d"+position.coords.latitude+"!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc38c37978b7a7%3A0xa3c69e64fdaa9f20!2sMahallah%20Sumayyah!5e0!3m2!1sen!2smy!4v1673362965273!5m2!1sen!2smy' width='800' height='600' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Current Date and Location</title>
+    </head>
+
+<body>
+    <p>Current Date and Time is <span id='curr-time'></span>.</p>
+    
+    <h1 style="color:blue;">Surau Nurul Iman</h1>
+
+        <p><Strong>Contact Us</Strong></p>
+
+        <button onclick="getLocation()">Get Location</button>
+
+        <p id="loc"></p>
+        <p id="mapholder"></p>
+        
+        <p><Strong>Address</Strong></p>
+        <p>123, Jalan SP 8/1, Taman Saujana Puchong, 47100 Puchong,
+        <br>Selangor</p>
+        <p>Tel:+019-372 7970</p>
+
+        <script>
+        const x = document.getElementById("loc");
+        const y = document.getElementById("mapholder");
+
+        function getLocation() {
+        try {
+            navigator.geolocation.watchPosition(showPosition);
+        } catch {
+            x.innerHTML = err;
+        }
+        }
+
+        function showPosition(position) {
+        
+        
+        let latlon = position.coords.latitude + "," + position.coords.longitude;
+
+        let img_url = "https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=14&size=400x300&sensor=false&key=YOUR_KEY";
+        
+
+        document.getElementById("mapholder").innerHTML = "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.3694237161185!2d"+position.coords.longitude+"!3d"+position.coords.latitude+"!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdb4f537e12b29%3A0x94bddb8a0dd1821c!2sSurau%20Nurul%20Iman!5e0!3m2!1sen!2smy!4v1673399071944!5m2!1sen!2smy' width='100%' height='50%' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>";
+        }
+
+        var dt = new Date();
+            document.getElementById('curr-time').innerHTML=dt;
+        </script>
+
+</body>
+</html>

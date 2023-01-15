@@ -1,0 +1,285 @@
+body{
+  font-family: "GT Easti", Arial, sans-serif;
+
+}
+
+
+.wrapper{
+  width:1100px;
+  height: auto;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+/*...................Navigation style Start...................................*/
+navigation_bar{
+  width: auto;
+}
+ul {
+
+
+align-items: center;
+justify-content: center;
+list-style-type: none;
+padding-left: 0px;
+padding-right: 0px;
+overflow: hidden;
+background-color: white;
+
+}
+
+li {
+float: right;
+}
+
+li a {
+  display: block;
+  color: #4F4E4E;
+  text-align: center;
+  padding: 22px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "GT Easti", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  border-bottom: 3px solid transparent;
+  
+
+}
+
+li.normal a:hover {
+  border-bottom: 3px solid #393939;
+}
+
+li a.active {
+border-bottom: 3px solid #393939;
+}
+
+li.logo{
+
+  padding-top: 10px;
+  background-image: url("Image/LOGO\ Web.png");
+  background-size: 230px;
+  background-repeat: no-repeat;
+  width: 284px;
+  position: relative;
+  display: inline-block;
+  height:70px;
+  position: center;
+  float: left;
+
+  
+}
+/*...................Navigation style End...................................*/
+
+/*...................Header Image Style Start...............................*/
+
+.header-container{
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+  overflow: hidden;
+  background-image: url("Image/Big\ Image.png");
+  background-attachment: fixed;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 520px;
+  left: 0px;
+  top: auto;
+  background-repeat: no-repeat;
+  border-bottom: 10px solid #002873;
+  display: block;
+}
+
+.description{
+  width: 1100px;
+  height: auto;
+  position: absolute;
+  bottom: 70px;
+  left: 16px;
+  font-size: 18px;
+  font-family: "GT Easti", Arial, sans-serif;
+  font-style: normal;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  font-size: 96px;
+  color:white;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  width: 669px;
+  height: 30px;
+  bottom: 100px;
+  margin-left: 18px;
+  position: absolute;
+}
+
+.description p{
+  font-size: 48px;
+  color:white;
+  font-weight: bold;
+  position: absolute;
+  bottom: 250px;
+  left: 0px;
+  align-items: center;
+  justify-content: center;
+  width: 353px;
+  height: 30px;
+  
+}
+
+/*...................Header Image Style End...............................*/
+
+
+
+
+/*...................Restaurant In Selangor Box Start..............................*/
+* {
+  box-sizing: border-box;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 20px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row:first-child {
+  margin: 0 -5px;
+  height:auto;
+  width: 1100px;
+}
+
+.row {
+  margin-top: 20px;
+  height:auto;
+  width: 1100px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 800px) {
+.column {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+}
+
+/* Style the counter cards */
+.card {
+
+padding: 0px;
+border-radius: 5px;
+margin-top: 20px;
+
+text-align: left;
+background-color: white;
+border-style: solid;
+border-width: 1px;
+border-color: #dbdada;
+height:340px;
+display: inline-block;
+overflow: hidden;
+
+}
+
+.imgsection{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  width: 243px;
+  height: 173px;
+}
+.card h3, p{
+border-radius: 5px;
+padding: 16px;
+margin: 0;
+}
+
+img {
+border-radius: 5px;
+width: 100%;
+height: 173px;
+max-height: 173px;
+display: block;
+transition: .3s ease-in-out;
+}
+
+.result p{
+font-weight: 600;
+color: #4F4E4E;
+}
+
+.card h3{
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+display: flex;
+align-items: center;
+padding-top: 23px;
+
+color: #4F4E4E;
+}
+  
+.activityLabel {
+  width: 223px;
+  height: 34px;
+  padding: 10px 0px 0px 16px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  align-items: center;
+
+  color: #8B8B8B;
+}
+
+.info {
+
+font-style: normal;
+font-weight: 530;
+font-size: 14px;
+line-height: 16.94px;
+display: flex;
+align-items: center;
+padding-top: 0px;
+color: #4F4E4E;
+height: 34px;
+}
+/*...................Restaurant In Selangor Box End..............................*/
+
+  
+footer {
+  background-color: #002873;
+  padding: 10px;
+  height: auto;
+  text-align: center;
+  margin: 0%;
+  color: white;
+  
+}
+
+div.card:hover {
+  background-color: #d4ebf7;
+  }
+  
+div.card img:hover {
+  transform: scale(1.2);
+
+
+}

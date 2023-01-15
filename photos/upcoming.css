@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .wrapper{
+    width:1100px;
+    height: auto;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /*Navigation style Start*/
+  ul {
+      
+    list-style-type: none;
+    margin-left:5% ;
+    margin-right:5% ;
+    padding-left: 0px;
+    padding-right: 0px;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+      display: block;
+      color: #4F4E4E;
+      text-align: center;
+      padding: 22px;
+      text-decoration: none;
+      font-size: 17px;
+      font-family: "GT Easti", Arial, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      border-bottom: 3px solid transparent;
+     
+   
+  }
+  
+  li.normal a:hover {
+      border-bottom: 3px solid #393939;
+  }
+  
+  li a.active {
+    border-bottom: 3px solid #393939;
+  }
+  
+  li.logo{
+  
+      padding-top: 10px;
+      background-image: url("photos/logo.png");
+      background-size: 230px;
+      background-repeat: no-repeat;
+      width: 284px;
+      position:relative;
+      display: inline-block;
+      height:60px;
+      position: center;
+      float: left;
+   
+      top: -1px;
+  }
+  /*Navigation style End*/
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 0 30px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {
+      margin: 0 -5px;
+      padding: 0 30px;
+      
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    
+    padding: 16px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: left;
+    background-color: #f1f1f1;
+    display: inline-block;
+    overflow: hidden;
+  
+  }
+  .column :hover {
+  background-color: #92D3F5;
+  border: 2px solid #92D3F5;
+  }
+
+  .imgsection{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .card img {
+    border: 2px solid #555;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+  }
+
+  .card img:hover {
+    transform: scale(1.2);
+    }
+
+  /*Header Image Style Start*/
+  
+  div.header-container{
+      padding-left: 0px;
+      padding-right: 0px;
+      overflow:hidden;
+      /*background-image: url("photos/masjid.png");*/
+      background-attachment:scroll;
+      background-size:100%;
+      position: absolute;
+      width: 100%;
+      height: 520px;
+      left: 0px;
+      top: auto;
+      background-repeat: no-repeat;
+      border-bottom: 10px solid #002873;
+      display: block;
+  }
+  
+  .description{
+      position: absolute;
+      bottom: 70px;
+      left: 16px;
+      font-size: 18px;
+      font-family: "GT Easti", Arial, sans-serif;
+      font-style: normal;
+  }
+  
+  h1{
+      font-size: 110px;
+      color:white;
+      margin-left: 18%;
+      font-weight: bold;
+  }
+
+  h2{
+    font-size: 60px;
+    color:white;
+    margin-left: 18%;
+    font-weight: bold;
+    position: absolute;
+    bottom: -70px;
+    left: 0px;
+  }
+  
+  .description p{
+      font-size: 40px;
+      color:white;
+      margin-left: 18%;
+      font-weight: bold;
+      position: absolute;
+      bottom: 180px;
+      left: 0px;
+      
+  }
+  
+  /*Header Image Style End*/
+  
+  /* Style The Dropdown Button */
+  .dropbtn {
+    background-color: #D9D9D9;
+    color: rgb(9, 9, 9);
+    padding: 16px;
+    width: 150px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    
+    
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position:absolute;
+    background-color: #767373;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #7b7a7a}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  
+  #more {display: none;}
+  /*button */
+  
+  input[type=button]{
+    background-color: #ffffff;
+    border: none;
+    color: rgb(8, 0, 128);
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+
+  }  
+  /*button end*/

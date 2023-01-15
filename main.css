@@ -1,0 +1,409 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .wrapper{
+    width:1100px;
+    height: auto;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  /*Navigation style Start*/
+  ul {
+      
+    list-style-type: none;
+    margin-left:5% ;
+    margin-right:5% ;
+    padding-left: 0px;
+    padding-right: 0px;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+      display: block;
+      color: #4F4E4E;
+      text-align: center;
+      padding: 22px;
+      text-decoration: none;
+      font-size: 17px;
+      font-family: "GT Easti", Arial, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      border-bottom: 3px solid transparent;
+     
+   
+  }
+  
+  li.normal a:hover {
+      border-bottom: 3px solid #393939;
+  }
+  
+  li a.active {
+    border-bottom: 3px solid #393939;
+  }
+  
+  li.logo{
+  
+      padding-top: 10px;
+      background-image: url("photos/logo.png");
+      background-size: 230px;
+      background-repeat: no-repeat;
+      width: 284px;
+      position:relative;
+      display: inline-block;
+      height:60px;
+      position: center;
+      float: left;
+   
+      top: -1px;
+  }
+  /*Navigation style End*/
+
+   /*Header Image Style Start*/
+  
+   div.header-container{
+    padding-left: 0px;
+    padding-right: 0px;
+    overflow:hidden;
+    /*background-image: url("photos/masjid.png");*/
+    background-attachment:scroll;
+    background-size:100%;
+    position: absolute;
+    width: 100%;
+    height: 520px;
+    left: 0px;
+    top: auto;
+    background-repeat: no-repeat;
+    border-bottom: 10px solid #002873;
+    display: block;
+}
+
+.description{
+    position: absolute;
+    bottom: 70px;
+    left: 16px;
+    font-size: 18px;
+    font-family: "GT Easti", Arial, sans-serif;
+    font-style: normal;
+}
+
+h1{
+    font-size: 110px;
+    color:white;
+    margin-left: 18%;
+    font-weight: bold;
+}
+
+.description p{
+    font-size: 40px;
+    color:white;
+    margin-left: 18%;
+    font-weight: bold;
+    position: absolute;
+    bottom: 180px;
+    left: 0px;
+    
+}
+
+/*header end*/
+
+/*footer*/
+footer {
+  background-color: #002873;
+  padding: 10px;
+  height: auto;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100%;
+  color: white;
+  
+}
+
+/*footer end*/
+
+/*button*/
+
+  .button-container{
+  background-color: white;
+  overflow: auto;
+  white-space: nowrap;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 20px;
+  
+}
+
+.button {
+  border: none;
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+ 
+}
+
+.button a {
+  color: black;
+  text-decoration: none;
+  display:block ;
+  border-radius: 20px;
+  width: 20%;
+
+}
+
+.button1 {
+  background-color: #a2a2a2; 
+  border: 2px solid black;
+  border-radius: 20px;
+  width:20%;
+
+}
+
+.button2 {
+  background-color: #f1f1f1; 
+  border: 2px solid black;
+  border-radius: 20px;
+  width:20%;
+
+}
+
+/* button end*/
+
+/*Header Image Style End*/
+ 
+  /* Responsive columns */
+  @media screen and (max-width: 800px) {
+    .card-container1 {
+      width: 80%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+   
+  /* col1*/
+
+  .card-container1{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+  }
+
+  .card1{
+    display: flex;
+    background-color: #f1f1f1;
+    border: 2px solid rgb(140, 140, 140);
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: all 2s;
+  }
+
+  .card-img1 {
+    width: 30%;
+    border-radius: 10px;
+  }
+
+  .card-img1 img {
+    width: 100%;
+    min-height: 100%;
+    border-radius: 10px;
+  }
+
+  .card-img1 img:hover {
+    background-color: #92D3F5;
+    border: 2px solid #92D3F5;
+    border-radius: 10px;
+    }
+
+
+  .cardtext1 {
+    width: 70%;
+    padding: 15px;
+  }
+
+  .cardtext1 p {
+    bottom: 70px;
+    left: 16px;
+    font-size: 22px;
+    font-family: "GT Easti", Arial, sans-serif;
+    font-style: normal;
+}
+
+.cardtext1 h2{
+  bottom: 70px;
+  left: 16px;
+  margin-top: -8px;
+  font-size:50px;
+  font-family: "GT Easti", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bolder;
+}
+
+/* end col1*/
+
+/* col2*/
+
+.card2{
+  display: flex;
+  background-color: #f1f1f1;
+  border: 2px solid rgb(140, 140, 140);
+  border-radius: 10px;
+  margin-top: 80px;
+  transition: all 2s;
+}
+
+.card-img2 {
+  width: 30%;
+  border-radius: 10px;
+  order: 2;
+}
+
+.card-img2 img {
+  width: 100%;
+  min-height: 100%;
+  border-radius: 10px;
+}
+
+.card-img2 img:hover {
+  background-color: #92D3F5;
+  border: 2px solid #92D3F5;
+  border-radius: 10px;
+  }
+
+.cardtext2 {
+  width: 70%;
+  padding: 15px;
+  order: 1;
+}
+
+.cardtext2 p {
+  bottom: 70px;
+  left: 16px;
+  font-size: 22px;
+  font-family: "GT Easti", Arial, sans-serif;
+  font-style: normal;
+}
+
+.cardtext2 h2{
+  bottom: 70px;
+  left: 16px;
+  margin-top: -8px;
+  font-size:50px;
+  font-family: "GT Easti", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bolder;
+}
+/* end col2*/
+
+/* col3*/
+
+.card3{
+  display: flex;
+  background-color: #f1f1f1;
+  border: 2px solid rgb(140, 140, 140);
+  border-radius: 10px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  transition: all 2s;
+}
+
+.card-img3 {
+  width: 30%;
+  border-radius: 10px;
+}
+
+.card-img3 img {
+  width: 100%;
+  min-height: 100%;
+  border-radius: 10px;
+}
+
+.card-img3 img:hover {
+  background-color: #92D3F5;
+  border: 2px solid #92D3F5;
+  border-radius: 10px;
+  }
+
+.cardtext3 {
+  width: 70%;
+  padding: 15px;
+}
+
+.cardtext3 p {
+    bottom: 70px;
+    left: 16px;
+    font-size: 22px;
+    font-family: "GT Easti", Arial, sans-serif;
+    font-style: normal;
+
+}
+
+.cardtext3 h2{
+    bottom: 70px;
+    left: 16px;
+    margin-top: -8px;
+    font-size:50px;
+    font-family: "GT Easti", Arial, sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+/* end col3*/
+
+/* open*/
+
+.open {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  border: 2px solid #00DB16;
+  border-radius: 5px;
+  width: 54px;
+  height: 25px;
+  padding:0;
+  padding-left: 1px;
+  color: #00DB16;
+  margin-left: 15px;
+  }
+  
+  .opTime {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 5px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-left: 1px;
+  color: #00DB16;
+  margin-left: 15px;
+  }
+
+  /* open end*/
+
+

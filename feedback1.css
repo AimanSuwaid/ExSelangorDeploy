@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .wrapper{
+    width:1100px;
+    height: auto;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  /*Navigation style Start*/
+  ul {
+      
+    list-style-type: none;
+    margin-left:5% ;
+    margin-right:5% ;
+    padding-left: 0px;
+    padding-right: 0px;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+      display: block;
+      color: #4F4E4E;
+      text-align: center;
+      padding: 22px;
+      text-decoration: none;
+      font-size: 17px;
+      font-family: "GT Easti", Arial, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      border-bottom: 3px solid transparent;
+     
+   
+  }
+  
+  li.normal a:hover {
+      border-bottom: 3px solid #393939;
+  }
+  
+  li a.active {
+    border-bottom: 3px solid #393939;
+  }
+  
+  li.logo{
+  
+      padding-top: 10px;
+      background-image: url("photos/logo.png");
+      background-size: 230px;
+      background-repeat: no-repeat;
+      width: 284px;
+      position:relative;
+      display: inline-block;
+      height:70px;
+      position: center;
+      float: left;
+   
+      top: -1px;
+  }
+  /*Navigation style End*/
+
+   /*Header Image Style Start*/
+  
+   div.header-container{
+    padding-left: 0px;
+    padding-right: 0px;
+    overflow:hidden;
+    /*background-image: url("photos/masjid.png");*/
+    background-attachment:scroll;
+    background-size:100%;
+    position: absolute;
+    width: 100%;
+    height: 520px;
+    left: 0px;
+    top: auto;
+    background-repeat: no-repeat;
+    border-bottom: 10px solid #002873;
+    display: block;
+}
+
+/*header end*/
+
+/*footer*/
+footer {
+  background-color: #002873;
+  padding: 10px;
+  height: auto;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100%;
+  color: white;
+  
+}
+
+/*footer end*/
+
+ 
+  /* Responsive columns */
+  @media screen and (max-width: 800px) {
+    .card-container1 {
+      width: 80%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  /* form*/
+   
+  * {
+    box-sizing: border-box;
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-size: 18px;
+    font-family: "GT Easti", Arial, sans-serif;
+    font-weight: bold;
+    font-style:italic;
+  }
+
+  legend{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-size: 25px;
+    font-family: "GT Easti", Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    height: 1000px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 8%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 92%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+/* form end*/
